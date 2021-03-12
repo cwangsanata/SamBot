@@ -143,8 +143,6 @@ async def remind(ctx, day):
 # TODO: Webscrape lyrics in >sing command; take http, access the lyric metadata; send to channel; if too long,
 #  break into two
 
-# TODO: Make hangman; but am lazy sooooooooooo
-
 #TODO: Don't be a Yandev and learn switch statements
 @bot.event
 async def on_message(message):
