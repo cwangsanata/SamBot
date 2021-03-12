@@ -156,8 +156,6 @@ async def on_message(message):
         await message.channel.send('i\nc\ne')
     elif '69' in message.content.split():
         await message.channel.send('nice')
-    elif 'gg' in message.content.split():
-        await message.channel.send('gg')
     elif 'simp' in message.channel.split():
         await message.channel.send('pokimane')
     await bot.process_commands(message)
