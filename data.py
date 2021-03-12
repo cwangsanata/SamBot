@@ -35,5 +35,6 @@ derogatory = ["cock-up",
               "dolt",
               'donkey',
               'gimp',
-              'harlot'
+              'harlot',
+              'bed-wetter'
               ]
