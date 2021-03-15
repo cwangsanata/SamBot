@@ -137,6 +137,9 @@ async def remind(ctx, day):
     """
     await ctx.channel.send("We have a meeting this " + str(day) + ". All Hail Sam!")
 
+@bot.command()
+async def ping(ctx):
+    await ctx.send('Pong! {0}'.format(round(bot.latency, 1)))
 
 # TODO: Make monkey command that pulls a random monkey from Google images (>monkey)
 
@@ -144,6 +147,7 @@ async def remind(ctx, day):
 #  break into two
 
 #TODO: Don't be a Yandev and learn switch statements
+
 @bot.event
 async def on_message(message):
     if 'sus' in message.content:
@@ -152,7 +156,7 @@ async def on_message(message):
         await message.channel.send("amogus")
     elif 'thank' in message.content and 'sam bot' in message.content.lower():
         await message.channel.send("YOU'RE WELCOME :triumph:")
-    elif message.content.lower() == 'n' and len(message.content) <= 1:
+    elif 'n' in message.content.split():
         await message.channel.send('i\nc\ne')
     elif '69' in message.content.split():
         await message.channel.send('nice')
