@@ -148,6 +148,23 @@ async def ping(ctx):
     await ctx.send('Pong! {0}'.format(round(bot.latency, 1)))
 
 
+async def shutdown(ctx):
+    id = str(ctx.author.id)
+    if id == 'your_id_here':
+        await ctx.send('Shutting down the bot!')
+        await ctx.bot.logout()
+    else:
+        await ctx.send("You dont have sufficient permmisions to perform this action!")
+
+async def restart(ctx):
+    id = str(ctx.author.id)
+    if id == 'your_id_here':
+        await ctx.send('Restarting the bot!')
+        await ctx.bot.login()
+    else:
+        await ctx.send("You dont have sufficient permmisions to perform this action!")
+
+
 # TODO: Make monkey command that pulls a random monkey from Google images (.monkey)
 
 # TODO: Webscrape lyrics in >sing command; take http, access the lyric metadata; send to channel; if too long,
