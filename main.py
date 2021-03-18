@@ -137,11 +137,18 @@ async def remind(ctx, day):
     """
     await ctx.channel.send("We have a meeting this " + str(day) + ". All Hail Sam!")
 
+
 @bot.command()
 async def ping(ctx):
+    """
+    Use .ping to return the latency between user and bot server
+    :param ctx: context object required in api
+    :return: the latency between user and bot server
+    """
     await ctx.send('Pong! {0}'.format(round(bot.latency, 1)))
 
-# TODO: Make monkey command that pulls a random monkey from Google images (>monkey)
+
+# TODO: Make monkey command that pulls a random monkey from Google images (.monkey)
 
 # TODO: Webscrape lyrics in >sing command; take http, access the lyric metadata; send to channel; if too long,
 #  break into two
@@ -160,8 +167,8 @@ async def on_message(message):
         await message.channel.send('i\nc\ne')
     elif '69' in message.content.split():
         await message.channel.send('nice')
-    elif 'simp' in message.content.split():
-        await message.channel.send('pokimane')
+    elif 'valorant' in message.content.split():
+        await message.channel.send('HOP ON VALORANT :couplekiss:')
     await bot.process_commands(message)
 
 
