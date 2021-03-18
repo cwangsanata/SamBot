@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="54735ee5-5400-4b0a-a604-f746427f5d94" name="Default Changelist" comment="So keep working on this you twat">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +51,21 @@
       <option name="project" value="LOCAL" />
       <updated>1615839431678</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="This is where we amend with Valorant!">
+      <created>1616098538225</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1616098538225</updated>
+    </task>
+    <task id="LOCAL-00005" summary="This is where we amend with Valorant!">
+      <created>1616098911609</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1616098911609</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -71,6 +84,7 @@
     <MESSAGE value="fine" />
     <MESSAGE value="So keep working on this you twat" />
     <MESSAGE value="Oh Okay" />
-    <option name="LAST_COMMIT_MESSAGE" value="Oh Okay" />
+    <MESSAGE value="This is where we amend with Valorant!" />
+    <option name="LAST_COMMIT_MESSAGE" value="This is where we amend with Valorant!" />
   </component>
 </project>
