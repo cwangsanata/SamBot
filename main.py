@@ -154,7 +154,8 @@ async def shutdown(ctx):
         await ctx.send('Shutting down the bot!')
         await ctx.bot.logout()
     else:
-        await ctx.send("You dont have sufficient permmisions to perform this action!")
+        await ctx.send("You don't have sufficient permissions to perform this action!")
+
 
 async def restart(ctx):
     id = str(ctx.author.id)
@@ -162,7 +163,7 @@ async def restart(ctx):
         await ctx.send('Restarting the bot!')
         await ctx.bot.login()
     else:
-        await ctx.send("You dont have sufficient permmisions to perform this action!")
+        await ctx.send("You don't have sufficient permissions to perform this action!")
 
 
 # TODO: Make monkey command that pulls a random monkey from Google images (.monkey)
