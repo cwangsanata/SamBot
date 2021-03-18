@@ -147,6 +147,7 @@ async def ping(ctx):
     """
     await ctx.send('Pong! {0}'.format(round(bot.latency, 1)))
 
+
 @bot.command()
 async def shutdown(ctx):
     id = str(ctx.author.id)
@@ -155,6 +156,7 @@ async def shutdown(ctx):
         await ctx.bot.logout()
     else:
         await ctx.send("You don't have sufficient permissions to perform this action!")
+
 
 @bot.command()
 async def restart(ctx):
