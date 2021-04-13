@@ -187,8 +187,6 @@ async def on_message(message):
         await message.channel.send('i\nc\ne')
     elif '69' in message.content.split():
         await message.channel.send('nice')
-    elif 'valorant' in message.content:
-        await message.channel.send('HOP ON VALORANT :couplekiss:')
     await bot.process_commands(message)
 
 
