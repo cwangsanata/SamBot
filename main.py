@@ -169,6 +169,8 @@ async def restart(ctx):
 
 
 # TODO: Make monkey command that pulls a random monkey from Google images (.monkey)
+async def monkey(ctx):
+    await ctx.send(file=discord.File('theMonkey.png'))
 
 # TODO: Webscrape lyrics in >sing command; take http, access the lyric metadata; send to channel; if too long,
 #  break into two
