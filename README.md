@@ -18,4 +18,4 @@ T'was fun while it lasted.
 - I got my rock moves
 - And I don't need you
 
-# Thanks for visiting this desolate hellscape.
+# Thanks for visiting this desolate landscape.
