@@ -3,7 +3,6 @@ import random
 
 from discord.ext import commands
 from random import choice
-from data import derogatory
 
 """
 First time for everything eh.
@@ -14,9 +13,6 @@ Christopher Wangsanata
 bot = discord.Client()
 help_command = commands.DefaultHelpCommand(no_category='Commands')
 bot = commands.Bot(command_prefix='.')
-
-
-# TODO: Fix "help" function.
 
 @bot.event
 async def on_ready():
@@ -82,17 +78,6 @@ async def mock(ctx, *args):
             else:
                 result += letter.lower()
     await ctx.channel.send(str(result))
-
-
-@bot.command()
-async def insult(ctx):
-    """
-    Use .insult to get insulted.
-    :param ctx: context object needed in method call
-    :return: String with a random insult
-    """
-    await ctx.channel.send("YOU " + choice(derogatory).upper() + "!")
-
 
 @bot.command()
 async def sus(ctx):
@@ -164,12 +149,6 @@ async def restart(ctx):
         await ctx.bot.login()
     else:
         await ctx.send("You don't have sufficient permissions to perform this action!")
-
-
-# TODO: Make monkey command that pulls a random monkey from Google images (.monkey)
-
-# TODO: Webscrape lyrics in >sing command; take http, access the lyric metadata; send to channel; if too long,
-#  break into two
 
 @bot.event
 async def on_message(message):
