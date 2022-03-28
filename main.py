@@ -3,23 +3,15 @@ import random
 
 from discord.ext import commands
 from random import choice
-from data import derogatory
 
 """
-TODOTODOTODOTODOTODOTODOTODOTODOTODOTODOTODOTODO.
-
-made by Obama
-kitowang@yahoo.com
+First time for everything eh.
 """
 
 # Ion wanna touch anything here cause it works
 bot = discord.Client()
 help_command = commands.DefaultHelpCommand(no_category='Commands')
 bot = commands.Bot(command_prefix='.')
-
-
-# TODO: Fix "help" function.
-
 
 @bot.event
 async def on_ready():
@@ -86,17 +78,6 @@ async def mock(ctx, *args):
                 result += letter.lower()
     await ctx.channel.send(str(result))
 
-
-@bot.command()
-async def insult(ctx):
-    """
-    Use .insult to get insulted.
-    :param ctx: context object needed in method call
-    :return: String with a random insult
-    """
-    await ctx.channel.send("YOU " + choice(derogatory).upper() + "!")
-
-
 @bot.command()
 async def sus(ctx):
     """
@@ -126,7 +107,7 @@ async def sus(ctx):
                            "\n⢀⠢⡑⡀⢂⢊⠠⠁⡂⡐⠀⠅⡈⠪⠪⠪⠣⠫⠑⡁⢔⠕⣜⣜⢦⡰⡎⡯⡾⡽")
 
 
-# TODO: implement time of day feature to make it more useful; might want to import time of day package thingy
+# TODO: Make it actually work with real times
 @bot.command()
 async def remind(ctx, day):
     """
@@ -148,6 +129,7 @@ async def ping(ctx):
     await ctx.send('Pong! {0}'.format(round(bot.latency, 1)))
 
 
+# Nothing under here works
 @bot.command()
 async def shutdown(ctx):
     id = str(ctx.author.id)
@@ -166,16 +148,6 @@ async def restart(ctx):
         await ctx.bot.login()
     else:
         await ctx.send("You don't have sufficient permissions to perform this action!")
-
-
-# TODO: Make monkey command that pulls a random monkey from Google images (.monkey)
-async def monkey(ctx):
-    await ctx.send(file=discord.File('theMonkey.png'))
-
-# TODO: Webscrape lyrics in >sing command; take http, access the lyric metadata; send to channel; if too long,
-#  break into two
-
-#TODO: Don't be a Yandev and learn switch statements
 
 @bot.event
 async def on_message(message):
@@ -196,7 +168,6 @@ def read_token():
     with open("token.txt", "r") as f:
         lines = f.readlines()
         return lines[0].strip()
-
 
 token = read_token()
 
