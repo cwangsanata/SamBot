@@ -6,7 +6,6 @@ from random import choice
 
 """
 First time for everything eh.
-Christopher Wangsanata
 """
 
 # Ion wanna touch anything here cause it works
